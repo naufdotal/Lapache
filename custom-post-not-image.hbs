@@ -1,20 +1,20 @@
 {{!-- Layout --}}
 {{!< default }}
 
-{{#contentFor "mapache_class_body"}}is-single-post{{/contentFor}}
+{{#contentFor "mapache_class_body"}}is-article is-article-single{{/contentFor}}
 
 {{#post}}
-<article class="post my-10">
+<article class="post">
 
-    <header class="container mx-auto max-w-3xl">
+    <header class="u-container u-maxWidth740 u-marginTop30">
         {{!-- Article Header - partials/article/article-header.hbs --}}
         {{> "article/article-header"}}
 
-        {{!-- Article Author - partials/components/author-meta.hbs --}}
-        {{> "components/author-meta"}}
+        {{!-- Article Author - partials/article/article-author.hbs --}}
+        {{> "article/article-author"}}
     </header>
 
-    <div class="post container mx-auto max-w-3xl">
+    <div class="post u-maxWidth740 u-marginAuto u-container u-marginTop20 u-marginBottom40">
         {{!-- Article Content - partials/article/article-body.hbs --}}
         {{> "article/article-body"}}
     </div>
